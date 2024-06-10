@@ -1,0 +1,295 @@
+:root {
+    --branding-color: rgb(145, 179, 250);
+    --secondary-color: #ffffff;
+    --background-color: #1b1b1b;
+    --default-font-family: "Montserrat", sans-serif;
+    --heading-font-family: "Outfit", sans-serif;
+    --box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  body {
+    color: var(--secondary-color);
+    font-family: var(--heading-font-family);
+  }
+  .navbar {
+    background: var(--background-color);
+  }
+  .nav-link {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .nav-link:hover {
+    color: var(--branding-color);
+  }
+  
+  
+  .video-container {
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .video-container video {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('images/play-button.png') no-repeat center center; 
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    display: none; 
+  }
+  
+  .hero {
+    background: var(--background-color);
+    color: var(--secondary-color);
+    padding: 150px 0;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 50px 0 0;
+  }
+  .hero h1 {
+    background: linear-gradient(
+      111.7deg,
+      rgb(145, 179, 250) 29.9%,
+      rgb(254, 143, 139) 95%
+    );
+    background-clip: text;
+    color: transparent;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+  .hero h2 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+  }
+  
+  .skill-container {
+    background: var(--background-color);
+  }
+  .skillset {
+    font-family: var(--heading-font-family);
+    color: var(--secondary-color);
+    font-size: 70px;
+    font-weight: 600;
+    padding: 40px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+ 
+  .skill-icons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 5px;
+    padding: 50px 0;
+  }
+  .icon {
+    padding-top: 20px;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+  }
+  .icon:hover {
+    transform: scale(1.3);
+  }
+  .icon p {
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  
+  .project-intro {
+    background-color: var(--background-color);
+    font-size: 70px;
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    margin: 0;
+    padding: 100px 20px 50px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+  }
+  .project-container {
+    background-color: var(--background-color);
+    padding: 50px 20px 20px;
+  }
+  
+
+  .my-apps:hover {
+    transform: scale(1.1); /* Увеличение на 10% */
+    transition: transform 0.3s ease-in-out; /* Плавное изменение */
+  }
+
+
+  .project-container h2 {
+    font-size: var(--heading-font-family);
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .project-container p {
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+  }
+  
+  .project-description {
+    color: var(--secondary-color);
+  }
+  
+  .programmers{
+    width: 340px; height: 200px;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .programmers img{
+    height: 100%;
+    width: auto;
+  }
+  
+  footer {
+    margin: 80px 0 30px;
+  }
+  
+  footer h5 {
+    color: var(--branding-color);
+    font-size: 36px;
+    font-weight: 700;
+  
+
+  }
+  footer h6{
+    color:var(--secondary-color);
+   
+  } 
+
+  footer .email-link {
+    color: var(--secondary-color);
+    font-family: var(--heading-font-family);
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+  }
+  footer .email-link:hover {
+    color: var(--branding-color);
+    font-weight: 600;
+    transform: scale(1.2);
+  }
+  footer .social-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 150px;
+    color: var(--secondary-color);
+    margin: 20px;
+    transition: all 200ms ease-in-out;
+  }
+  footer .fa-file {
+    font-size: 24px;
+    padding: 15px 17px;
+  }
+
+  footer .fa-linkedin {
+    padding: 15px;
+    font-size: 24px;
+  }
+  footer .social-links a:hover {
+    background: var(--branding-color);
+    transform: scale(1.3);
+  }
+  
+  footer small a {
+    color: var(--branding-color);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 5px;
+  }
+  footer small a:hover {
+    text-decoration: underline;
+  }
+  
+small{
+  color:var(--secondary-color);
+}
+
+
+  @media (max-width: 900px) {
+    .nav-link {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .home {
+      margin-top: 10px;
+    }
+    
+    .hero {
+      padding: 140px 0;
+    }
+    .hero p {
+      font-size: 30px;
+    }
+    .hero h1 {
+      font-size: 60px;
+    }
+    .hero h2 {
+      font-size: 32px;
+    }
+    .skillset {
+      font-size: 44px;
+      padding: 20px 0;
+    }
+    .skill-icons-container {
+      padding: 25px 15px;
+    }
+    .project-intro {
+      font-size: 38px;
+    }
+    .project-description {
+      padding: 0;
+      text-align: center;
+
+    }
+    .project-container h2 {
+      font-size: 32px;
+    }
+    
+  }
+  
+  @media (max-width: 1000px) {
+  
+    .project-description {
+      display: block;
+      margin: 30px auto;
+    }
+  
+    footer small {
+      font-size: 10px;
+    }
+  }
+  
