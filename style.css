@@ -10,6 +10,7 @@
   body {
     color: var(--secondary-color);
     font-family: var(--heading-font-family);
+  
   }
   .navbar {
     background: var(--background-color);
@@ -108,6 +109,7 @@
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     grid-gap: 5px;
     padding: 50px 0;
+    
   }
   .icon {
     padding-top: 20px;
@@ -160,6 +162,8 @@
   
   .project-description {
     color: var(--secondary-color);
+    font-family: var(--default-font-family);
+    
   }
   
   .programmers{
@@ -194,14 +198,14 @@
   footer .email-link {
     color: var(--secondary-color);
     font-family: var(--heading-font-family);
-    font-size: 26px;
+    font-size: 22px;
     text-decoration: none;
     transition: all 200ms ease-in-out;
   }
   footer .email-link:hover {
     color: var(--branding-color);
     font-weight: 600;
-    transform: scale(1.2);
+    transform: scale(1.0);
   }
   footer .social-links a {
     background-color: rgba(255, 255, 255, 0.1);
@@ -242,7 +246,7 @@ small{
   @media (max-width: 900px) {
     .nav-link {
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 300;
     }
     .home {
       margin-top: 10px;
@@ -275,17 +279,37 @@ small{
       text-align: center;
 
     }
+    .project-description p {
+      font-size: 18px;
+
+    }
+
     .project-container h2 {
       font-size: 32px;
     }
+
+    .icon p{
+     font-size: small;
+    }
     
+    .video-container {
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+     }
+    
+     .programmers {
+      padding: 25px;
+     }
+
+
   }
   
   @media (max-width: 1000px) {
   
     .project-description {
       display: block;
-      margin: 30px auto;
+      margin: 30px auto;;
     }
   
     footer small {
